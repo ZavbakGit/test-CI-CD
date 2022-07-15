@@ -1,7 +1,6 @@
 name: app_ci_cd
 description: A new Flutter project.
 
-cd 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
