@@ -2,7 +2,7 @@ on:
   push:
     tags:
       - v*
-name: Continuous Delivery Release apk
+name: Continuous1 Delivery Release apk
 jobs:
   build:
     name: Build APk
