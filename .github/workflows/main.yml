@@ -16,7 +16,9 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           lutter-version: '3.0.5'
+      - run: ls
       - run: cd ./app_ci_cd
+      - run: ls
       - run: flutter pub get
       - run: flutter build apk -t lib/main.dart --split-per-abi
       - name: Release APK
