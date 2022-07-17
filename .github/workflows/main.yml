@@ -23,14 +23,12 @@ jobs:
       - run: flutter --version
       - run: flutter pub get
       - run: flutter test
-      - run: flutter build apk
-      #- run: flutter build apk -t lib/main.dart --split-per-abi
+      - run: flutter build apk --split-per-abi
       - run: ls build/
-        # working-directory: ./app_ci_cd
       - name: Release APK
         uses: ncipollo/release-action@v1
         with:
-          # artifacts: "build/app/outputs/apk/debug/*.apk"
-                      # build\app\outputs\flutter-apk\
+          name: manual
+          commit: manual 
           artifacts: "build/app/outputs/flutter-apk/*.apk"
           token: ${{ secrets.cidi_flutter}}
