@@ -15,8 +15,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v2
         with:
-          distribution: 'zulu'
-          java-version: '11'
+          java-version: '12'
       - uses: subosito/flutter-action@v2
         with:
           # lutter-version: '3.0.5'
@@ -25,8 +24,7 @@ jobs:
       - name: Pub Get Packages
       - run: flutter pub get
       - run: flutter test
-      - name: Build APK
-        run:  flutter build apk -t lib/main.dart --split-per-abi
+        run: flutter build apk -t lib/main.dart --split-per-abi
       - name: Release apk
         uses: ncipollo/release-action@v1
         with:
