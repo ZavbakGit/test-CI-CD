@@ -40,5 +40,7 @@ jobs:
       - name: Release APK
         uses: ncipollo/release-action@v1
         with:
+          name: manual
+          commit: manual 
           artifacts: "build/app/outputs/flutter-apk/*.apk"
           token: ${{ secrets.cidi_flutter}}
