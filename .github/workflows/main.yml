@@ -32,5 +32,5 @@ jobs:
       - name: Create a Release APK
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "build/app/outputs/apk/release/,"
+          artifacts: "app_ci_cd/build/app/outputs/apk/release/*.apk,"
           token: ${{ secrets.cidi_flutter}}
