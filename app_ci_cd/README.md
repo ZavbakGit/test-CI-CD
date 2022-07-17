@@ -17,3 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 jlk
 
 https://www.raywenderlich.com/19407406-continuous-delivery-for-android-using-github-actions
+
+
+https://gist.github.com/vinicioslc/b9bd073c8013a726033a999db68a45be - пример
