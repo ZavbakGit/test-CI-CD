@@ -14,8 +14,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v2
         with:
-          distribution: 'zulu'
-          java-version: '11'
+          java-version: '12'
       - uses: subosito/flutter-action@v2
         with:
           # lutter-version: '3.0.5'
@@ -23,7 +22,6 @@ jobs:
       - run: flutter --version
       - run: flutter pub get
       - run: flutter test
-      - name: Build APK
       - run: flutter build apk -t lib/main.dart --split-per-abi
       - run: ls
       - run: ls build
@@ -31,7 +29,7 @@ jobs:
       - run: ls build/app/outputs
       - run: ls build/app/outputs/apk
       - run: ls build/app/outputs/apk/release
-      - name: Release apk
+      - name: Create Release apk
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/apk/release/*.apk"
