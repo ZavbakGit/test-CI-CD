@@ -24,7 +24,7 @@ jobs:
       - run: flutter pub get
       - run: flutter test
       - name: Build APK
-        run: flutter build apk -t lib/main.dart --split-per-abi
+      - run: flutter build apk -t lib/main.dart --split-per-abi
       - run: ls
       - run: ls build
       - run: ls build/app
