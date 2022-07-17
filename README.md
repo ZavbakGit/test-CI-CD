@@ -8,4 +8,6 @@ https://github.gitop.top/subosito/flutter-action тут компиляция
 git tag v2.4
 git push origin v2.4
 
+https://itnan.ru/post.php?c=1&p=520506 интересно
+
 

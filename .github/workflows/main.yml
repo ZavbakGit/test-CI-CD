@@ -25,6 +25,10 @@ jobs:
       - run: flutter build apk -t lib/main.dart --split-per-abi
       - run: ls
       - run: ls build
+      - run: ls build/app
+      - run: ls build/app/outputs
+      - run: ls build/app/outputs/apk
+      - run: ls build/app/outputs/apk/release
       - name: Create a Release APK
         uses: ncipollo/release-action@v1
         with:
